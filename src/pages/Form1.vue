@@ -8,7 +8,7 @@
 
         <div>
           <v-autocomplete
-            class="w-full h-auto min-w-[15vw] sm:max-w-[25vw]"
+            class="w-full h-auto min-w-[15vw] lg:max-w-[35vw]"
             label="Branch"
             :items="data"
             color="primary"
@@ -17,7 +17,7 @@
             density="compact"
           />
           <v-text-field
-            class="w-full min-w-[15vw] sm:max-w-[25vw]"
+            class="w-full min-w-[15vw] lg:max-w-[35vw]"
             label="date"
             variant="solo-filled"
             density="compact"
@@ -26,7 +26,7 @@
             readonly
           />
           <v-autocomplete
-            class="w-full min-w-[15vw] sm:max-w-[25vw]"
+            class="w-full min-w-[15vw] lg:max-w-[35vw]"
             label="Party"
             bgColor="#F5F5F5"
             density="compact"
@@ -35,7 +35,7 @@
             variant="solo-filled"
           />
           <v-autocomplete
-            class="w-full min-w-[15vw] sm:max-w-[25vw]"
+            class="w-full min-w-[15vw] lg:max-w-[35vw]"
             label="Sub-Party"
             color="primary"
             density="compact"
@@ -48,7 +48,7 @@
         <div>
           <div class="flex gap-1">
             <v-text-field
-              class="w-full min-w-[8vw] sm:max-w-[25vw]"
+              class="w-full min-w-[8vw] lg:max-w-[35vw]"
               label="Voucher No1"
               density="compact"
               variant="solo-filled"
@@ -57,7 +57,7 @@
             />
 
             <v-text-field
-              class="w-full min-w-[8vw] sm:max-w-[25vw]"
+              class="w-full min-w-[8vw] lg:max-w-[35vw]"
               density="compact"
               variant="solo-filled"
               bgColor="#E0E0E0"
@@ -65,7 +65,7 @@
             />
 
             <v-text-field
-              class="w-full min-w-[8vw] sm:max-w-[25vw]"
+              class="w-full min-w-[8vw] lg:max-w-[35vw]"
               density="compact"
               variant="solo-filled"
               bgColor="#E0E0E0"
@@ -74,7 +74,7 @@
           </div>
           <div class="flex gap-1">
             <v-text-field
-              class="w-full min-w-[8vw] sm:max-w-[25vw]"
+              class="w-full min-w-[8vw] lg:max-w-[35vw]"
               label="Party PO No."
               density="compact"
               variant="solo-filled"
@@ -82,14 +82,14 @@
             />
 
             <v-text-field
-              class="w-full min-w-[8vw] sm:max-w-[25vw]"
+              class="w-full min-w-[8vw] lg:max-w-[35vw]"
               density="compact"
               variant="solo-filled"
               bgColor="#E0E0E0"
             />
           </div>
           <v-text-field
-            class="w-full min-w-[15vw] sm:max-w-[25vw]"
+            class="w-full min-w-[15vw] lg:max-w-[35vw]"
             label="Requisition"
             variant="solo-filled"
             density="compact"
@@ -101,7 +101,7 @@
 
         <div>
           <v-autocomplete
-            class="w-full min-w-[15vw] sm:max-w-[25vw]"
+            class="w-full min-w-[15vw] lg:max-w-[35vw]"
             label="Currency"
             color="primary"
             :items="currency"
@@ -110,7 +110,7 @@
             variant="solo-filled"
           />
           <v-text-field
-            class="w-full min-w-[15vw] sm:max-w-[25vw]"
+            class="w-full min-w-[15vw] lg:max-w-[35vw]"
             label="Conversion Rate"
             variant="solo-filled"
             model-value="Rs. 100000"
@@ -133,9 +133,11 @@
 </template>
 
 <script setup lang="ts">
-import Form1Tabs from "../components/tabs/Form1Tabs.vue";
+import Form1Tabs from "../components/form/Form1Tabs.vue";
 
 const date = new Date().toLocaleDateString();
+
+// const formData = () => {};
 
 const data: String[] = [
   "California",

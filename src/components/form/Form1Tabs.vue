@@ -16,10 +16,7 @@
         </v-window-item>
 
         <v-window-item value="party_information">
-          <v-tabs v-model="tab" bg-color="primary">
-            <v-tab density="compact" value="general">General</v-tab>
-            <v-tab density="compact" value="two">Party Information</v-tab>
-          </v-tabs>
+          <PartyInfoTab />
         </v-window-item>
 
         <v-window-item value="logistics">Logistics</v-window-item>
@@ -30,6 +27,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import PartyInfoTab from "./partyInformationTab/PartyInfoTab.vue";
 import DetailsTable from "./detailsTab/DetailsTable.vue";
 import DetailsItem from "./detailsTab/DetailsItem.vue";
 
