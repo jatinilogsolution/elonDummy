@@ -15,7 +15,7 @@
         <v-text-field
           class="w-full min-w-[15vw] lg:max-w-[35vw]"
           label="Tin No."
-          variant="solo-filled"
+          variant="solo"
           density="compact"
           bgColor="#E0E0E0"
         />

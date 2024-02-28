@@ -19,7 +19,9 @@
           <PartyInfoTab />
         </v-window-item>
 
-        <v-window-item value="logistics">Logistics</v-window-item>
+        <v-window-item value="logistics">
+          <LogisticsTabs />
+        </v-window-item>
       </v-window>
     </v-card-text>
   </v-card>
@@ -30,6 +32,7 @@ import { ref } from "vue";
 import PartyInfoTab from "./partyInformationTab/PartyInfoTab.vue";
 import DetailsTable from "./detailsTab/DetailsTable.vue";
 import DetailsItem from "./detailsTab/DetailsItem.vue";
+import LogisticsTabs from "./logisticsTab/LogisticsTabs.vue";
 
 const tab = ref();
 </script>
